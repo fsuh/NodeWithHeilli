@@ -3,7 +3,7 @@
 const http = require('http');
 const person = require('./person.json')
 
-const port = 3000;
+const port = 3001;
 const host = 'localhost';
 
 const server = http.createServer((req, res) => {

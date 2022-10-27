@@ -7,6 +7,7 @@ console.log(person.firstName);
 console.log(`${person.lastName}, ${person.firstName}`);
 console.log(person['age']);
 console.log(person.age);
+console.log ('xxxxxxxxxxx')
 
 function print(fieldname){
     console.log(person[fieldname]);
