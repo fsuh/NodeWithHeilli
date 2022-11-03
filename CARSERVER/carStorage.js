@@ -16,6 +16,12 @@ const getAllModels = () => {
     return models;
 }
 
+// another possible (bad, hard coded) implementation. This doesn't concern the caller becasue the API is not changed
+
+//function getAllModels(){
+// return ['Fast GT', 'Errare', 'Mbw]
+//}
+
 const getCar = (key, value) => {
     const found=[];
     if(key && value){

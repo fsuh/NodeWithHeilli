@@ -1,6 +1,6 @@
 [
     {"model":"Fast GT", "license":"ABC-1"},
-    {"model":"Errare", "license":"XY>-123"},
+    {"model":"Errare", "license":"XY-123"},
     {"model":"Fast GT", "license":"HI-1"},
     {"model":"MbW", "license":"A-1"}
 ]
