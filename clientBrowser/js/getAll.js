@@ -17,7 +17,6 @@
                 resultset.appendChild(tr);
 
             }
-
         }
         catch(err){
 

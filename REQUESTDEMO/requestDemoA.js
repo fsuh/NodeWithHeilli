@@ -6,10 +6,10 @@ const {port, host} = require('./config.json');
 
 
 const server = http.createServer((req, res) =>{
-    //console.log(req);
-    //console.log(req.url);
+    // console.log(req);
+    // console.log(req.url);
     //console.log(req.headers);
-    //console.log(Object.keys(req));
+     console.log(Object.keys(req));
 
     const urlData = new URL(`http://${host}:${port}${req.url}`)
     //console.log(urlData)
