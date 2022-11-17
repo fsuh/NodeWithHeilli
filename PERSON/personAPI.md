@@ -13,7 +13,7 @@
 
 ## function **search(key,value)**
 
-Function returns an array of person objects. Search criterionis passed tot he function as parameters. If parameters are missing, all persons will be returned.
+Function returns an array of person objects. Search criterion is passed to the function as parameters. If parameters are missing, all persons will be returned.
 
 - search() returns an array of all persons
 - search(key, value) returns an array of all matching persons
