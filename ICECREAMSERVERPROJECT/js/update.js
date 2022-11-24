@@ -17,48 +17,47 @@
 
         }
         catch(err){
-            // how error
+            showErrorMessage(err.message)
 
         }
         function populateIcecreamList(queryResult){
             for(const flavor of queryResult){
                 const option = document.createElement('option');
                 option.value=flavor;
-                option.textContent=Flavor;
+                option.textContent=flavor;
                 iceCreamList.appendChild(option);
             }
             iceCreamList.addEventListener('change', choose);
             iceCreamList.value ='';
         }
 
-        function choose(){
+        async function choose(){
             const iceCreamFlavor=iceCreamList.value;
             if(iceCreamFlavor.length>0){
                 try {
                     const data = await fetch(`/icecreams/${iceCreamFlavor}`);
                     const result = await data.json();
-                    updateResult(result)
-
+                    updateResult(result);
                 }
                 catch(err){
-                    // show error
+                    showErrorMessage(err.message)
                 }
             }
             else{
-                // clear result
+                clearResultarea()
             }
         }
     }
 
     function updateResult(data){
         if(!data){
-            //error
+            showErrorMessage('Programming error! sorry')
         }
         else if(data.message){
-            //error
+            showErrorMessage(data.message)
         }
         else if(data.name && data.name.length===0){
-            // clear result
+            clearResultarea()
         }
         else {
             let htmlString=`
@@ -84,4 +83,4 @@
         </div>`;
     }
 
-}())
+})();
