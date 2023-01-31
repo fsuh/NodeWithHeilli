@@ -1,0 +1,20 @@
+{
+  "getAll": [
+    "SELECT id, firstname, lastname, department, salary",
+    "FROM employee"
+  ],
+  "getOne": [
+    "SELECT id, firstname, lastname, department, salary",
+    "FROM employee WHERE id=?"
+  ],
+  "insert": [
+    "INSERT INTO employee (id, firstname, lastname, department, salary)",
+    "VALUES(?,?,?,?,?)"
+  ],
+  "update": [
+    "UPDATE employee SET firstname=?, lastname=?, department=?,",
+    "salary=? WHERE id=?"
+  ],
+  "remove": ["DELETE FROM employee WHERE id=?"],
+  "primaryKey": "id"
+}
