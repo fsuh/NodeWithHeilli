@@ -1,0 +1,49 @@
+h1 {
+  color: lightgreen;
+}
+
+.legend {
+  color: blue;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+table,
+th,
+td {
+  border: solid black 1px;
+  padding: 0.5em;
+}
+
+thead {
+  background: khaki;
+}
+
+button {
+  font-family: sans-serif;
+  width: 13em;
+  height: 2em;
+}
+
+.info {
+  border: 2px solid green;
+  padding: 1em;
+}
+
+.error {
+  border: 2px dashed red;
+  padding: 1em;
+}
+
+#messagearea {
+}

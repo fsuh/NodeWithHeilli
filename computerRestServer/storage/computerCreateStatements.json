@@ -1,0 +1,27 @@
+{
+  "host": "127.0.0.1",
+  "port": 3306,
+  "admin": "fsuh",
+  "user": "scarlett",
+  "userpassword": "Secret@123",
+  "dropuser": true,
+  "debug": true,
+  "database": "computerdb",
+  "allowPublicKeyRetrieval": true,
+  "tables": [
+    {
+      "tableName": "computer",
+      "columns": [
+        "id INTEGER NOT NULL PRIMARY KEY",
+        "name VARCHAR(20) NOT NULL",
+        "type VARCHAR(30) NOT NULL",
+        "processor VARCHAR(15) NOT NULL",
+        "amount INTEGER NOT NULL"
+      ],
+      "data": [
+        [1, "Beast II", "server", "Selenium II", 100],
+        [2, "Cera 2400", "laptop", "Brain 456", 25]
+      ]
+    }
+  ]
+}
