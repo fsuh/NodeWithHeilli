@@ -38,7 +38,7 @@
     };
     if (method === "PUT" || method === "POST") {
       options.body = jsonarea.value;
-      options.hearders = { "Content-Type": "application/json" };
+      options.headers = { "Content-Type": "application/json" };
     }
     try {
       const result = await fetch(urifield.value, options);
