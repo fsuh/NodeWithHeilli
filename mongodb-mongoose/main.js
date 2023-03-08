@@ -1,13 +1,6 @@
 import mongoose from "mongoose";
 import Blog from "./Blog";
 
-mongoose.connect(
-   mongosh "mongodb+srv://cluster0.x0pwnxu.mongodb.net/myFirstDatabase" --apiVersion 1 --username fuhsuh
-);
-
-//   "mongodb+srv://fuhsuh:Bzion2020@cluster0.x0pwnxu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-
-// create a new blog post object
 
 const article = new Blog({
   title: "Awesome Post",
